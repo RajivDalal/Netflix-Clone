@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Homepage
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+        <style>
+            body {
+              background-image: url('netflix1.jpeg');
+            }
+
+            hr {
+              border: none;
+              border-top: 5px solid rgb(67, 67, 67);
+              margin: 0;
+            }
+
+
+            .navbar-inverse .navbar-brand {
+              font-size: 56px;
+              font-weight: bold;
+              text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+              color:#df0000
+            }
+
+            .navbar-inverse {
+              background-color: transparent;
+              border-color: transparent;
+              margin-bottom: 0;
+              border-radius: 0;
+            }
+
+            .navbar-inverse .navbar-nav>li>a {
+              font-weight: bold;
+              text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+              color: whitesmoke;
+            }
+
+            @media (max-width: 767px) {
+              .navbar-default .navbar-nav>li>a {
+                font-size: 16px;
+              }
+            }
+
+            .jumbotron {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              margin: 0;
+              padding: 0;
+            }
+
+            .jumbotron-img {
+              background-color: transparent;
+              background-size: cover;
+              background-position: center center;
+              color: white;
+            }           
+
+
+            .segmented-text {
+              background-color:black;
+              padding: 50px 0;
+              color: white;
+            }
+
+            .segmented-text h2 {
+              font-size: 30px;
+              margin-bottom: 20px;
+            }
+
+            .segmented-text p {
+              font-size: 18px;
+              line-height: 1.5;
+              margin-bottom: 30px;
+            }
+            
+            img {
+              width: 100%;
+              height: auto;
+            }
+            
+            .btn-link {
+              text-align: left;
+              font-size: 20px;
+              font-weight: bold;
+              color: #333;
+            }
+
+            .btn-link:hover,
+            .btn-link:focus {
+              color: gray;
+              text-decoration: none;
+            }
+
+            .card-header {
+              background-color: lightgray;
+            }
+
+            .card-body {
+              font-size: 18px;
+            }
+
+            .faq-section {
+              background-color: black;
+              padding: 50px 0;
+              color: white;
+            }
+
+            .faq-item {
+              margin-bottom: 30px;
+            }
+
+            .faq-item h3 {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+
+            .faq-item p {
+              font-size: 18px;
+              line-height: 1.5;
+              margin-bottom: 0;
+            }
+
+            .email-section {
+              background-color:black;
+              padding: 50px 0;
+              color: white;
+            }
+
+            .btn-custom {
+              background-color: #df0000;
+               border-color: #df0000;
+            }
+
+
+          </style>
+    
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Netflix</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Hindi</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login/Signup </a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+    <div class="jumbotron jumbotron-img">
+        <div class="container-fluid">
+          <h1>Unlimited movies, TV shows and more.</h1>
+          <h3>Watch anywhere. Cancel anytime.</h3><br><br>
+          <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col">
+                <label class="sr-only" for="email-input">Email address</label>
+                <div class="input-group mb-2">
+                  <input type="email" class="form-control" id="email-input" placeholder="Enter email">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-custom align-self-stretch">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="segmented-text">
+      <div class="container">
+        <div class="col-md-4">
+          <img src="img1.jpg" alt="img1" class="img-responsive">
+          <h2>Watch on your TV</h2>
+          <p>Stream Netflix on your smart TV, game console, PC, Mac, mobile, tablet and more.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img2.png" alt="img2" class="img-responsive">
+          <h2>Download your shows to watch offline.</h2>
+          <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img3.jpg" alt="img3" class="img-responsive">
+          <h2>Watch everywhere.</h2>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faq-accordion">
+          <div class="card">
+            <div class="card-header" id="faq-heading-1">
+              <h3 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-1" aria-expanded="false" aria-controls="faq-collapse-1">
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                  What is Netflix?
+                </button>
+              </h3>
+            </div>
+            <div id="faq-collapse-1" class="collapse" aria-labelledby="faq-heading-1" data-parent="#faq-accordion">
+              <div class="card-body">
+                Netflix is a streaming service that offers a wide variety of TV shows, movies, documentaries, and more on thousands of internet-connected devices.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-heading-2">
+              <h3 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-2">
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                  How much does Netflix cost?
+                </button>
+              </h3>
+            </div>
+            <div id="faq-collapse-2" class="collapse" aria-labelledby="faq-heading-2" data-parent="#faq-accordion">
+              <div class="card-body">
+                Netflix offers several subscription plans starting at $8.99 per month.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faq-heading-3">
+              <h3 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-3">
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                  How can I watch Netflix?
+                </button>
+              </h3>
+            </div>
+            <div id="faq-collapse-3" class="collapse" aria-labelledby="faq-heading-3" data-parent="#faq-accordion">
+              <div class="card-body">
+                You can watch Netflix on your TV, computer, tablet, or mobile device. Just download the Netflix app and sign in to start streaming.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="email-section">
+      <div class="container">
+        <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col">
+              <label class="sr-only" for="email-input">Email address</label>
+              <div class="input-group mb-2">
+                <input type="email" class="form-control" id="email-input" placeholder="Enter email">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-custom align-self-stretch">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div> 
+  </body>
+</html>
